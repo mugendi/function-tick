@@ -156,3 +156,5 @@ ts.on('tick-cleared', function () {
 })
 
 ```
+
+Check out the complete code [HERE](https://github.com/mugendi/function-tick/blob/master/test.js).
