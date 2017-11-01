@@ -111,15 +111,17 @@ This parameter dictates how many times **func** is called while the **match patt
 
 > #### But our function is taking an unpredictable time to complete. We do not want to call the ```func``` again until processing is finished! **Enter ```wait & function callback:```**
 
+### **wait:**
 When **wait** is set to true, then **func** will be called and all subsequent calls suspended till processing is over. We then use the **callback function** to indicate that processing is over.
 
+## **context:** & **arguments:**
 Every time **func** is run a the **context** is set and **arguments** passed. The very last argument passed is the **function callback**, which, you should call *asynchronously* whenever processing ends. 
 
 If you do not want this level of control, or if your functions are *synchronous*, please set **wait** to **```false```**.
 
 > #### But wait, what if we want our ticker to run in durations less than 1 second (the default). **Enter ```tick duration.```**
 
-You can further tweak your ticker by changing the **tick duration.** The default value is *1000ms* (1 second). This value is set via the [options](#API)  argument.
+You can further tweak your ticker by changing the **tick duration.** The default value is *1000ms* (1 second). This value is set via the [options](#api)  argument.
 
 ## Events
 There are several events to watch. These include:
