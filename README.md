@@ -74,7 +74,7 @@ To best explain function tickers, we will use an example use case.
 
 Here is how we set up our tickers...
 
-1) ##### Because this process takes days, we want to take just a few shots after a minute or so. We need an instruction like ```"every two minutes..."``` take a shot. **Enter ```match.```**
+1) ####Because this process takes days, we want to take just a few shots after a minute or so. We need an instruction like ```"every two minutes..."``` take a shot. **Enter ```match.```**
 
 ### **match:**
 This is a *cron-ish* pattern that is matched against current time **HH:mm:ss**
@@ -96,20 +96,20 @@ Match has a *cron-ish* syntax formatted in "HH:mm:ss" format.
 
 **"n"** - matches exact numeric value. 
 
-2) ##### Once the **match pattern** is accurately matched against current time **HH:mm:ss**, then we need to perform a certain task. We need to call a function. **Enter ```func.```**
+2) ####Once the **match pattern** is accurately matched against current time **HH:mm:ss**, then we need to perform a certain task. We need to call a function. **Enter ```func.```**
 
 ### **func:**
 
 This function will be called and executed. This means that, if the tick duration is one second, then a pattern like **"\*:\*5:\*"** will result in 60 calls every 5th minute *(mm % 5 == 0)*.
 
-3) ##### The function (```func```) is called repeatedly (at every tick) while the **match pattern** matches **current time**. But we want to take only three shots! **Enter ```repeat.```**
+3) ####The function (```func```) is called repeatedly (at every tick) while the **match pattern** matches **current time**. But we want to take only three shots! **Enter ```repeat.```**
 
 ### **repeat:**
 This parameter dictates how many times **func** is called while the **match pattern** matches *current time*.
 
 **repeat = 3** means that **func** will be called no more than 3 times. 
 
-4) ##### But our function is taking an unpredictable time to complete. We do not want to call the ```func``` again until processing is finished! **Enter ```wait & function callback:```**
+4) ####But our function is taking an unpredictable time to complete. We do not want to call the ```func``` again until processing is finished! **Enter ```wait & function callback:```**
 
 When **wait** is set to true, then **func** will be called and all subsequent calls suspended till processing is over. We then use the **callback function** to indicate that processing is over.
 
@@ -117,7 +117,7 @@ Every time **func** is run a the **context** is set and **arguments** passed. Th
 
 If you do not want this level of control, or if your functions are *synchronous*, please set **wait** to **```false```**.
 
-5) ##### But wait, what if we want our ticker to run in durations less than 1 second (the default). **Enter ```tick duration.```**
+5) ####But wait, what if we want our ticker to run in durations less than 1 second (the default). **Enter ```tick duration.```**
 
 You can further tweak your ticker by changing the **tick duration.** The default value is *1000ms* (1 second). This value is set via the [options](#API)  argument.
 
