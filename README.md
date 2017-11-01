@@ -81,7 +81,7 @@ This is a *cron-ish* pattern that is matched against current time **HH:mm:ss**
 
 While this pattern matches current time, then the function **func** will be called.
 
-### *match syntax*
+#### *match syntax*
 Match has a *cron-ish* syntax formatted in "HH:mm:ss" format.
 
 **"*"** - Means "every". Therefore "*5" means every 5(th). See ```match``` statements below: 
