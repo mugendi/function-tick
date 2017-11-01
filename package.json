@@ -1,0 +1,21 @@
+{
+  "name": "function-tick",
+  "version": "1.0.0",
+  "description": "A time based ticker that calls specified function and uses cron-ish syntax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tick",
+    "call",
+    "method",
+    "function",
+    "cron",
+    "iot",
+    "ticker",
+    "schedule"
+  ],
+  "author": "Anthony Mugendi <ngurumugz@gmail.com>",
+  "license": "MIT"
+}
