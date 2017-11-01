@@ -70,7 +70,7 @@ This ticker function is amazing...
 To best explain function tickers, we will use an example use case.
 
 ### Example Case:
-**We are using IOT to capture a seed germination timelapse video.** 
+> #### We are using IOT to capture a seed germination timelapse video.
 
 Here is how we set up our tickers...
 
